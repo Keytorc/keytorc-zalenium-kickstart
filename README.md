@@ -8,40 +8,8 @@ Zalenium, Docker ile birlikte konteyner yapısını kullanırken gerekli tarayı
 Zalenium kullanarak sadece Chrome ve Firefoxta testlerimizi çalıştırabiliriz. 
 Diğer tarayıcılar için Sauce Labs, BrowserStack gibi Remote sunucu hizmeti sunan firmaları kullanabiliriz.
 
-## Hangi Platform ve Dilleri Destekler?  
-Zalenium, Windows, Mac ve Linux üzerine kurulabilir.  
-    Docker ve Kubernetes‘ i desteklemektedir.
-
-
-## Zalenium Kullanmanın Avantajları Nelerdir?
-
-*	Tarayıcı driverlarını yükler ve güncel tutar.
-
-*	Selenium versiyonlarını güncel tutar
-
-*	Birden fazla testi paralel olarak farklı tarayıcı ve ortamda çalıştırır.
-
-* Testin canlı izlenmesine olanak sağlar ve kaydeder.
-
-
-## Selenium Grid Nedir?
-Selenium Grid, testlerimizi farklı ortamlarda ve cihazlarda paralel olarak koşmamızı sağlayan bir araçtır.    
-Selenium Grid, Hub ve Node yapısını kullanır, Hub bir sunucu üzerinde merkez görevi görürken Node (gerçek veya sanal) remote cihazlardan oluşmaktadır. Hub driverları yöneterek Node' lara istenen komutları gönderir.
-
-
-
-## Docker Nedir?
-Docker, uygulamaların farklı ortamlarda çalıştırılması sürecinde kullanılan bir platformdur. Uygulamamızı derler, ölçeklendirir, paketler ve dağıtmamızı sağlar.     
-Docker içerisinde barındırdığı container yapısını ve Docker Hub üzerinden indirilen image’ ları kullanarak ürünü farklı işletim sistemi, versiyon ve environment’ larla birbirinden izole şekilde çalıştırır.
-Docker yeterli kaynak ve gerekli yapılandırmalar ile birlikte kullanıldığında, yapısal problemleri ortadan kaldırarak
-uygulamalarımızı stabil bir şekilde çalışabilecek hale getirir.
-
-
-
-
-
-
 #  Zalenium ile esnek ve ölçeklenebilir konteyner tabanlı Selenium Grid uygulaması
+
 ## Gereksinimler
 
 - Docker   
@@ -62,26 +30,33 @@ $ Curl -fsSL https://get.docker.com -o get-docker.sh
 $ sudo sh get-docker.sh
 ```
 
-# Selenium Remote Test Projesi
-- İntellij İdea ide
+Windows:
+> https://docs.docker.com/docker-for-windows/install/
 
-Projeyi indirin. 
+Mac : 
+> https://docs.docker.com/docker-for-mac/install/
+
+
+## Selenium Remote Test Projesi
+
+- İntellij İdea ide indirilir.
+
+> https://www.jetbrains.com/idea/download
+
+- Proje indirilir.
+
+> Code - Download Zip
 
 
 
-## Selenium ve Zalenium İmage ?
+## Selenium ve Zalenium İmage
 
-1.	Selenium image ‘ı indirilir.
 ```
-$ Docker pull elgalu/selenium
-```
-2.	Zalenium image’ ı indirilir.
-
-```
-$ Docker pull dosel/zalenium
+1. $ Docker pull elgalu/selenium
+2. $ Docker pull dosel/zalenium
 ```
 
- Container' i Başlatmak için aşağıdaki komutlar kullanılır.
+ Başlatmak için aşağıdaki komutlar kullanılır.
  
  Windows:
  ```
@@ -113,18 +88,13 @@ $ Docker pull dosel/zalenium
  
  Zalenium localhost:4444 portunda çalışmaya başlayacaktır.
 
- Daha önce indirilen Testi başlatalım. 
+indirilen Testi başlatalım. 
  
  Testi canlı izlemek için,
  >  Localhost:4444/grid/admin/live
 
  Test Sonuçları için,
 > localhost:4444/dashboard
- 
- 
- Video kaydını tekrar izleyebilir.
- 
- Log kaydını inceleyebiliriz.
- 
+  
  
  **FIRAT ÇELİK ~ TEST AUTOMATİON ENGİNEER**
