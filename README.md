@@ -82,6 +82,7 @@ $ Docker pull dosel/zalenium
 ```
 
  Container' i Başlatmak için aşağıdaki komutlar kullanılır.
+ 
  Windows:
  ```
  $  docker run --rm -ti --name zalenium -p 4444:4444 ^
@@ -112,14 +113,13 @@ $ Docker pull dosel/zalenium
  
  Zalenium localhost:4444 portunda çalışmaya başlayacaktır.
 
+ Daha önce indirilen Testi başlatalım. 
  
  Testi canlı izlemek için,
- >  Localhost:4444/grid/admin/live adresine gitmeliyiz.
- 
- Daha önce indirilen Testi başlatalım. 
+ >  Localhost:4444/grid/admin/live
 
  Test Sonuçları için,
-> localhost:4444/dashboard adresinden gitmeliyiz.
+> localhost:4444/dashboard
  
  
  Video kaydını tekrar izleyebilir.
