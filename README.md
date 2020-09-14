@@ -64,6 +64,7 @@ $ sudo sh get-docker.sh
 
 # Selenium Remote Test Projesi
 - İntellij İdea ide
+
 Projeyi indirin. 
 
 
